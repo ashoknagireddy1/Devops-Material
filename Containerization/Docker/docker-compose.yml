@@ -7,7 +7,7 @@ services:
        MYSQL_ROOT_PASSWORD: test
    mywordpress:
      depends_on:
-       - mydbdb
+       - mydb
      image: wordpress:latest
      ports:
        - 8080:80
